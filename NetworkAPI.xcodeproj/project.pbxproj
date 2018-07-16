@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B164E6DA20FC23EA005E636E /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B164E6D920FC23EA005E636E /* ForecastService.swift */; };
+		B164E6DC20FC2605005E636E /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B164E6DB20FC2605005E636E /* CurrentWeather.swift */; };
 		B19C621E20FC138B003D8CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19C621D20FC138B003D8CFC /* AppDelegate.swift */; };
 		B19C622020FC138B003D8CFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19C621F20FC138B003D8CFC /* ViewController.swift */; };
 		B19C622320FC138B003D8CFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19C622120FC138B003D8CFC /* Main.storyboard */; };
 		B19C622520FC138D003D8CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19C622420FC138D003D8CFC /* Assets.xcassets */; };
 		B19C622820FC138D003D8CFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19C622620FC138D003D8CFC /* LaunchScreen.storyboard */; };
+		B19C623020FC139E003D8CFC /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19C622F20FC139E003D8CFC /* NetworkProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B164E6D920FC23EA005E636E /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		B164E6DB20FC2605005E636E /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		B19C621A20FC138B003D8CFC /* NetworkAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19C621D20FC138B003D8CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B19C621F20FC138B003D8CFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		B19C622420FC138D003D8CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B19C622720FC138D003D8CFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B19C622920FC138D003D8CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19C622F20FC139E003D8CFC /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		B19C621120FC138B003D8CFC = {
 			isa = PBXGroup;
 			children = (
+				B19C623120FC13A3003D8CFC /* Model */,
 				B19C621C20FC138B003D8CFC /* NetworkAPI */,
 				B19C621B20FC138B003D8CFC /* Products */,
 			);
@@ -62,6 +69,16 @@
 				B19C622920FC138D003D8CFC /* Info.plist */,
 			);
 			path = NetworkAPI;
+			sourceTree = "<group>";
+		};
+		B19C623120FC13A3003D8CFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B19C622F20FC139E003D8CFC /* NetworkProcessor.swift */,
+				B164E6D920FC23EA005E636E /* ForecastService.swift */,
+				B164E6DB20FC2605005E636E /* CurrentWeather.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B164E6DA20FC23EA005E636E /* ForecastService.swift in Sources */,
+				B164E6DC20FC2605005E636E /* CurrentWeather.swift in Sources */,
+				B19C623020FC139E003D8CFC /* NetworkProcessor.swift in Sources */,
 				B19C622020FC138B003D8CFC /* ViewController.swift in Sources */,
 				B19C621E20FC138B003D8CFC /* AppDelegate.swift in Sources */,
 			);

@@ -16,6 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+//		let url = URL(string: "https://api.darksky.net/forecast/dc77bc90ed1914baf43fa07dddb26993/37.8267,-122.4233")!
+//		let networkProcessory = NetworkProcessor(url: url)
+//
+//		networkProcessory.downloadJSONFromURL { (result) in
+//			
+//			print(result)
+//
+//		}
+		
+		let forecastServer = ForecastService(APIKEY: "dc77bc90ed1914baf43fa07dddb26993")
+		forecastServer.getForecast(latitude: 37.8, longitude: -122.42) { (currentWeather) in
+			print(currentWeather)
+		}
+		
 		return true
 	}
 
